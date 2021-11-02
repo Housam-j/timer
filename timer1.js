@@ -1,7 +1,6 @@
-let data;
-let t = 100;
-for(let item of data){
-setTimeout(() => {
-  process.stdout.write('\x07');
-}, item);
+const arg = process.argv.slice(2);
+for (let item of arg) {
+  setTimeout(() => {
+    process.stdout.write('\007');
+  }, item);
 }
